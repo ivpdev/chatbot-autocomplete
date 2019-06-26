@@ -1,0 +1,23 @@
+{
+  "name": "chatbot-autocomplete",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ivpdev/chatbot-autocomplete.git",
+  "author": "ivp",
+  "license": "MIT",
+  "scripts": {
+    "train-from-file": "TODO",
+    "start": "npm run compile && node dist/main.js",
+    "run": "node dist/main.js",
+    "run-debug": "npm run compile && node --inspect-brk dist/main.js",
+    "compile": "npx tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.8",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "HiddenMarkovModel": "0.0.5",
+    "machinelearn": "^2.1.3"
+  }
+}
